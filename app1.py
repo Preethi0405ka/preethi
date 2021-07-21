@@ -1,7 +1,7 @@
 from telegram.ext import Updater, MessageHandler,Filters
 from Adafruit_IO import Client
 import os
-aio = Client('Preethi__',os.getenv('preethi'))
+aio = Client('Preethi__',os.getenv('Preethi__'))
 def turn_on_light(bot,update):
     aio.send('bedroom-light',1)
     data = aio.receive('bedroom-light')
